@@ -8,7 +8,7 @@ function App() {
   return (
       <div>
       <p>hello world!</p>
-      {BusinessCards.map((card) => (<BusinessCard {...card}/>))}
+      {BusinessCards.map((card) => (<BusinessCard key={card.Email} {...card}/>))}
       </div>
   )
 }
